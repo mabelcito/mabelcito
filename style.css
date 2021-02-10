@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #1f191f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.banner img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+}
+.banner .content
+{
+    margin: auto 0 auto 40px;
+}
+.banner .content .text-1
+{
+    font-size: 27px;
+}
+.banner .content .text-2
+{
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.banner .content .text-3
+{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.banner .content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+.banner header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+.banner header .logo
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.banner header .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.banner header .menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+/* Abaut */
+.abaut
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.abaut .contentMa
+{
+    background: #0a1822;
+    padding: 100px;
+    width: 50%;
+}
+.heading
+{
+    position: relative;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.text
+{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.abaut .contentMa .text span
+{
+    color: rgb(141, 21, 21);
+    font-weight: 500;
+}
+.abaut .imgMa
+{
+    background: url(./img/f2.png);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    background-size: 115%;
+    animation: movimiento 5s infinite linear alternate;
+}
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }
+    to{
+        background-position: top right;
+    }
+}
+
+.services
+{
+    background: #260c41;
+    padding: 100px;
+    text-align: center;
+}
+.services .container
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.services .container .serviceMa
+{
+    position: relative;
+    background: #fff;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .container .serviceMa img
+{
+    max-width: 100px;
+}
+.services .container .serviceMa h2
+{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.technology
+{
+    background: #152b54;
+    width: 100%;
+    padding: 100px;
+    padding-top: 300px;
+    margin-top: -300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.technology .contentMa
+{
+    max-width: 800px;
+}
+.technology .skills-content .column
+{
+    width: calc(50% - 30px);
+}
+.technology .imgMa
+{
+    max-width: 250px;
+}
+.technology .imgMa img
+{
+    max-width: 100%;
+}
+.gratitude
+{
+    background: #4b3380;
+    padding: 100px;
+    text-align: center;
+}
+/* REDES SOCIALES Y COPY */
+
+footer{
+    background: #3a3939;
+    padding: 15px 23px;
+    color: rgba(255, 255, 255, 0.433);
+    text-align: center;
+}
+footer span a{
+    color: rgb(80, 64, 64);
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 991px)
+{
+    .banner
+    {
+        padding: 50px;
+    }
+    .banner header
+    {
+        padding: 20px 50px;
+    }
+    .banner .content h2
+    {
+        font-size: 36px;
+    }
+    .banner .content p
+    {
+        font-size: 16px;
+    }
+    .abaut
+    {
+        flex-direction: column;
+    }
+    .abaut .contentMa,
+    .abaut .imgMa
+    {
+        width: 100%;
+        padding: 50px;
+        min-height: 400px;
+        text-align: center;
+    }
+    .services
+    {
+        padding: 50px;
+    }
+    .services .container
+    {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .services .container .serviceMa
+    {
+        margin: 20px;
+        width: 300px;
+        height: 350px;
+    }
+    .technology
+    {
+        padding: 50px;
+        padding-top: 300px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .technology .imgMa
+    {
+        margin-top: 40px;
+        max-width: 250px;
+    }
+    .client
+    {
+        padding: 50px;
+    }
+    .footer
+    {
+        padding: 20px 50px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer ul
+    {
+        margin-bottom: 20px;
+    }
+}
