@@ -185,10 +185,6 @@
 {
     max-width: 800px;
 }
-.technology .skills-content .column
-{
-    width: calc(50% - 30px);
-}
 .technology .imgMa
 {
     max-width: 250px;
@@ -212,7 +208,7 @@ footer{
     text-align: center;
 }
 footer span a{
-    color: rgb(80, 64, 64);
+    color: rgb(29, 26, 26);
     text-decoration: none;
 }
 footer span a:hover{
